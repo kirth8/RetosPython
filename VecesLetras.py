@@ -7,29 +7,23 @@ print("-Solo usar:\n--ciclos\n--índices\n--comparaciones\n--variables auxiliare
 print("========================================================================\n")
 
 Entrada = input("Escribe una palabra: ")
-aux = 0
+aux = 0 
+diccionario = {"a":0, "b":0,"c":0, "d":0,"e":0, "f":0,"g":0, "h":0,"i":0, "j":0,"k":0, "l":0,"m":0, 
+               "n":0,"ñ":0, "o":0,"p":0, "q":0,"r":0, "s":0,"t":0, "u":0,"v":0, "w":0,"x":0, "y":0,"z":0}
 
-def contarLetras(Entrada, aux):
-    listaLetras = []
+contador = {}
+
+def contarLetras(Entrada, contador):
     for letra in Entrada:
-        tupla = (letra, aux)
-        listaLetras.append(tupla)
-        
-        cont = len(listaLetras) 
-        
-        while(cont != 0):
-            cont -=1
-            print("Bandera 1")
-            if (listaLetras[cont][1] > 0 ):
-                listaLetras[cont][1] += 1
-            print(listaLetras)
-        
-        
-        
-    # print(len(listaLetras))
-    # print(listaLetras)
-    # print(listaLetras[2][0])
+        if letra not in contador:
+            contador[letra] = 1
+        else:
+            contador[letra] += 1
+    
+    for letra in contador:
+        print(letra, "->", contador[letra])
 
-contarLetras(Entrada, aux)
+contarLetras(Entrada, contador)
+
 
 print("========================================================================\n")
