@@ -15,10 +15,15 @@ def encontrarMayorSegundo(lista):
 
     for num in lista:
         if num > aux:
-            auxR= aux
+            auxR = aux
             aux = num
+        elif num > auxR and num != aux:
+            auxR = num
+
     
-    print("AuxR= ", auxR)
+    print("Numero Mayor= ", aux, ", y Segundo Mayor= ", auxR)
+
+print("Lista = ", lista)
 
 encontrarMayorSegundo(lista)
 
