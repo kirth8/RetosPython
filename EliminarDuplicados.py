@@ -7,13 +7,11 @@ print("Restricciones:\n- No usar set()\n- No usar dict.fromkeys()\n- No usar com
 print("- Solo ciclos, comparaciones y variables auxiliares\n- Puedes crear una nueva lista\n- Mantén el orden original")
 print("========================================================================")
 lista = [1, 2, 2, 3, 1, 4, 3]
-listaR = {}
+listaR = []
 
 for num in lista:
-    listaR[num] = 1
-
-    
-    
+    if num not in listaR:
+        listaR.append(num) 
 
 print(listaR)
 print("========================================================================")
