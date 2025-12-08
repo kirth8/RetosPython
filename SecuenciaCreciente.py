@@ -15,20 +15,18 @@ print("========================================================================"
 lista = [3, 1, 2, 5, 4, 7]
 
 def secuenciaCreciente(lista):
-    aux = lista[0]
-    listaR = []
-    contador = 0
+    listaAux = []
 
     for num in lista:
-        if aux < num:
-            aux = num
-            listaR.append(aux)
-            contador += 1
-        elif num < aux and listaR[contador-1] > num:
-            # aux = num
-            listaR.append(num)
-            contador += 1
-    print(listaR)
+
+        if len(listaAux) == 0:
+            listaAux.append(num)
+
+        elif num > listaAux[len(listaAux)-1]:
+            # Tambien funciona listaAux[-1] para mostrar el ultimo numero agregado
+            listaAux.append(num)
+            
+    print(listaAux)
 
 secuenciaCreciente(lista)
 print("========================================================================")
