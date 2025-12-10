@@ -25,6 +25,6 @@ def encontrarMayorSegundo(lista):
 
 print("Lista = ", lista)
 
-encontrarMayorSegundo(lista)
-
+encontrarMayorSegundo(lista) 
+  
 print("========================================================================")
