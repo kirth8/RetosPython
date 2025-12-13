@@ -21,15 +21,24 @@ listaC = [1, 2, 3]
 objetivoC = 10
 
 def sumaParObjetivo(lista, objetivo):
-    for num in lista:
-        for i in lista[::-1]:
-            if (i+num) == objetivo:
-                print("A: ", i, " + B: ", num, " = ", i+num)
-                print("True")
-                return
-            print("A: ", i, " + B: ", num, " = ", i+num)
+    # for num in lista:
+    #     for i in lista[::-1]:
+    #         if (i+num) == objetivo:
+    #             print("A: ", i, " + B: ", num, " = ", i+num)
+    #             print("True")
+    #             return
+    #         print("A: ", i, " + B: ", num, " = ", i+num)
+    # print("False")
+    for i in range(len(lista)):
+        for j in range(len(lista)):
+            if i != j: 
+                print("A:", lista[i], "+ B:", lista[j], "=", lista[i] + lista[j])
+                
+                if lista[i] + lista[j] == objetivo:
+                    print("True")
+                    return
     print("False")
 
-sumaParObjetivo(listaC, objetivoC)
+sumaParObjetivo(listaA, objetivoA)
 
 print("========================================================================")
