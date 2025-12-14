@@ -13,20 +13,33 @@ print("========================================================================"
 entrada = 'aaabbcddd'
 
 def contarLetras(entrada):
-    salida = ' ' 
-    aux= 0
+    # salida = ' ' 
+    # aux= 0
 
-    for i in entrada:
-        if i == salida[-1]:
+    # for i in entrada:
+    #     if i == salida[-1]:
+    #         aux += 1
+            
+    #     else:
+    #         salida += str(aux)
+    #         aux = 1
+    #         salida += i
+            
+    # salida += str(aux)
+
+    # print(salida)
+
+    salida = ""
+    aux = 1
+
+    for i in range(1, len(entrada)):
+        if entrada[i] == entrada[i - 1]:
             aux += 1
-            
         else:
-            salida += str(aux)
+            salida += entrada[i - 1] + str(aux)
             aux = 1
-            salida += i
-            
-    salida += str(aux)
 
+    salida += entrada[-1] + str(aux)
     print(salida)
 
 contarLetras(entrada)
