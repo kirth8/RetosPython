@@ -24,11 +24,12 @@ def eliminarCarateresduplicados(entrada):
     for i in entrada:
         if i not in verificar:
             verificar[i] = 1
+            salida = salida + i
         else:
             verificar[i] += 1
     
-    for j in verificar:
-        salida = salida + j
+    # for j in verificar:
+    #     salida = salida + j
 
     print(verificar)
     print(salida)
