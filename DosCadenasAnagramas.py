@@ -36,8 +36,28 @@ C1 = 'python'
 C2 = 'java'
 
 def verificarAnagramas(string1, string2):
-    pass
+    diccionario1 = {}
+    diccionario2 = {}
 
-verificarAnagramas(A1, A2)
+    for i in string1:
+        if i in diccionario1:
+            diccionario1[i] +=1
+        else:
+            diccionario1[i] = 1
+
+    for i in string2:
+        if i in diccionario2:
+            diccionario2[i] +=1
+        else:
+            diccionario2[i] = 1
+
+    if diccionario1 == diccionario2:
+        print("True")
+    else:
+        print("False")
+
+    print(diccionario2)
+
+verificarAnagramas(B1, B2)
 
 print("========================================================================")
