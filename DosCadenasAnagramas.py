@@ -39,6 +39,12 @@ def verificarAnagramas(string1, string2):
     diccionario1 = {}
     diccionario2 = {}
 
+    #Se añade este condicional para optimizar el codigo, ya que un anagrama en 
+    # dos diferentes strings siempre van a tener el mismo tamaño
+    if len(string1) != len(string2):
+        print("False")
+        return
+
     for i in string1:
         if i in diccionario1:
             diccionario1[i] +=1
@@ -51,13 +57,8 @@ def verificarAnagramas(string1, string2):
         else:
             diccionario2[i] = 1
 
-    if diccionario1 == diccionario2:
-        print("True")
-    else:
-        print("False")
+    return diccionario1 == diccionario2
 
-    print(diccionario2)
-
-verificarAnagramas(B1, B2)
+print(verificarAnagramas(B1, B2))
 
 print("========================================================================")
