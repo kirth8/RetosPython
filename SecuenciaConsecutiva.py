@@ -29,19 +29,22 @@ lista2 = [1, 2, 4, 6, 8]
 lista3 = [7, 8, 9]
 
 def verificarSecuenciaConsecutiva(lista):
-    aux = lista[0]
-    contador = 0
-    listaR = []
     for num in lista:
-        if num >= aux:
-            aux=num
-            contador +=1
-            listaR.append(aux)
-        else:
-            print("No es consecutiva")
+        encontrado1 = False
+        encontrado2 = False
+
+        for otro in lista:
+            if otro == num + 1:
+                encontrado1 = True
+            if otro == num + 2:
+                encontrado2 = True
+
+        if encontrado1 and encontrado2:
+            print("Es consecutiva por:", num, num + 1, num + 2)
             return
 
-    print("Si es consecutiva")
+    print("No es consecutiva")
+
 
 
 verificarSecuenciaConsecutiva(lista1)
