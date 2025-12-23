@@ -18,9 +18,29 @@ class user:
         print("Activo: ", self.activo)
         print("=============================")
 
+    def psudoDiccionario(seft):
+        return {
+            "nombre": seft.name,
+            "Apellido": seft.lastname,
+            "Correo Electronico": seft.correo,
+        }
+
 
 obj1 = user("Pepo", "Pereira", "pepo@gmail.com", True)
 obj2 = user("Andrea", "Pirlo", "andreapirlo@gmail.com", False)
+obj3 = user("Gordo", "Sheo", "sheo@gmail.com", True)
 
 obj1.userGet()
 obj2.userGet()
+obj3.userGet()
+
+usuarios = [obj1, obj2, obj3]
+
+print("Lista de usuarios:")
+cont = 0
+for user in usuarios:
+    cont +=1
+    print(f"{cont}. {user.name} {user.lastname}")
+
+for user in usuarios:
+    print(user.psudoDiccionario())
