@@ -25,6 +25,10 @@ class user:
             "Correo Electronico": seft.correo,
         }
 
+    @staticmethod
+    def from_dict(data):
+        return user(data["nombre"], data["Apellido"])
+
 
 obj1 = user("Pepo", "Pereira", "pepo@gmail.com", True)
 obj2 = user("Andrea", "Pirlo", "andreapirlo@gmail.com", False)
@@ -44,3 +48,5 @@ for user in usuarios:
 
 for user in usuarios:
     print(user.psudoDiccionario())
+
+
