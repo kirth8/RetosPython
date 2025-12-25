@@ -33,6 +33,7 @@ class user:
 obj1 = user("Pepo", "Pereira", "pepo@gmail.com", True)
 obj2 = user("Andrea", "Pirlo", "andreapirlo@gmail.com", False)
 obj3 = user("Gordo", "Sheo", "sheo@gmail.com", True)
+obj4 = user("Hanie", "Ballena", "hanie@gmail.com", True)
 
 obj1.userGet()
 obj2.userGet()
