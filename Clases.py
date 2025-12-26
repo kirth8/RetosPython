@@ -38,8 +38,9 @@ obj4 = user("Hanie", "Ballena", "hanie@gmail.com", True)
 obj1.userGet()
 obj2.userGet()
 obj3.userGet()
+obj4.userGet()
 
-usuarios = [obj1, obj2, obj3]
+usuarios = [obj1, obj2, obj3, obj4]
 
 print("Lista de usuarios:")
 cont = 0
