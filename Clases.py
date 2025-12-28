@@ -32,15 +32,22 @@ class user:
 
 obj1 = user("Pepo", "Pereira", "pepo@gmail.com", True)
 obj2 = user("Andrea", "Pirlo", "andreapirlo@gmail.com", False)
-obj3 = user("Gordo", "Sheo", "sheo@gmail.com", True)
+obj3 = user("Eseman", "Sheo", "sheo@gmail.com", True)
 obj4 = user("Hanie", "Ballena", "hanie@gmail.com", True)
+obj5 = user("Sheo", "Gordo", "sheo@gmail.com", True)
+obj6 = user("Mishell", "Soriano", "mishell@gmail.com", True)
+obj7 = user("Mateo", "Gato", "mateogato@gmail.com", True)
 
 obj1.userGet()
 obj2.userGet()
 obj3.userGet()
 obj4.userGet()
+obj5.userGet()
+obj6.userGet()
+obj7.userGet()
 
-usuarios = [obj1, obj2, obj3, obj4]
+
+usuarios = [obj1, obj2, obj3, obj4, obj5, obj6, obj7]
 
 print("Lista de usuarios:")
 cont = 0
@@ -50,5 +57,6 @@ for user in usuarios:
 
 for user in usuarios:
     print(user.psudoDiccionario())
+
 
 
