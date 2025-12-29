@@ -45,6 +45,9 @@ obj4.userGet()
 obj5.userGet()
 obj6.userGet()
 obj7.userGet()
+obj7.userGet()
+obj7.userGet()
+obj7.userGet()
 
 
 usuarios = [obj1, obj2, obj3, obj4, obj5, obj6, obj7]
