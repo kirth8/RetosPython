@@ -54,12 +54,15 @@ usuarios = [obj1, obj2, obj3, obj4, obj5, obj6, obj7]
 
 print("Lista de usuarios:")
 cont = 0
+print("=============================================")
 for user in usuarios:
     cont +=1
     print(f"{cont}. {user.name} {user.lastname}")
 
+print("=============================================")
 for user in usuarios:
     print(user.psudoDiccionario())
-
+    
+print("=============================================")
 
 
