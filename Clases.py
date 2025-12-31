@@ -30,6 +30,11 @@ class user:
         return user(data["nombre"], data["Apellido"])
 
 
+    @staticmethod
+    def quienSoy(data):
+        return user("Soy: ", data["nombre"], data["Apellido"])
+
+
 obj1 = user("Pepo", "Pereira", "pepo@gmail.com", True)
 obj2 = user("Andrea", "Pirlo", "andreapirlo@gmail.com", False)
 obj3 = user("Eseman", "Sheo", "sheo@gmail.com", True)
@@ -65,4 +70,6 @@ for user in usuarios:
     
 print("=============================================")
 
+# for user in usuarios:
+#     print(user.)
 
