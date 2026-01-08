@@ -6,6 +6,6 @@ def agente_a(pregunta):
     return f"Agente A procesa y responde → {respuesta_b}"
 
 if __name__ == "__main__":
-    resultado = agente_a("¿Cuál es el sentido de la vida?")
+    resultado = agente_a("¿Cuál es el sentido de la vida?¿Acaso existe uno?¿O es un invento de la mente?")
     print(resultado)
 
